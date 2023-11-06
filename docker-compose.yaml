@@ -18,5 +18,5 @@ services:
     image: postgres:15
     ports:
     - "5432:5432"
-    environment:
-      - env/pgsql
+    env_file:
+      - env/pgsql.env
